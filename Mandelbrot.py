@@ -4,7 +4,7 @@ from time import time
 from PIL import Image, ImageEnhance, ImageOps
 import imageio
 
-start_iter = 17
+start_iter = 0
 maxiter = 200
 border = 4
 
@@ -15,13 +15,13 @@ pmax = x + 0.01
 qmin = y - 0.01
 qmax = y + 0.01
 
-# pmin = -2.5
-# pmax = 1.5
-# qmin = -2
-# qmax = 2
+pmin = -2.5
+pmax = 1.5
+qmin = -2
+qmax = 2
 
-ppoints = 1000
-qpoints = 1000
+ppoints = 300
+qpoints = 300
 
 
 def Mandelbrot_step(step, z, c, border, image):
